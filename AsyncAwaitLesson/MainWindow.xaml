@@ -1,0 +1,30 @@
+﻿<Window x:Class="AsyncAwaitLesson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncAwaitLesson"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="466" Width="800">
+    <Grid>
+        <Grid Background="MediumSeaGreen" Height="50" Margin="0,0,0,385">
+            <materialDesign:PackIcon Foreground="#FF673AB7" Kind="GamepadVariant" VerticalAlignment="Center" Height="50" Width="50"/>
+            <Label Margin="50 0 0 0" Content="XBOX Games Info Service" VerticalAlignment="Center" FontSize="20" FontFamily="Impact" Foreground="#FF673AB7"/>
+            <Button Name="getGamesListButton" Content="Получить список игр" HorizontalAlignment="Right" VerticalAlignment="Center" Width="176" Margin="0 0 10 0" Height="37" Click="GetGamesListButtonClick"/>
+        </Grid>
+        <Label Name="firstGameLabel"  HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top"/>
+        <Label Name="secondGameLabel"  HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Name="thirdGameLabel"  HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="firstGameDescription" HorizontalAlignment="Left" Margin="10,121,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="61" Width="772"/>
+        <TextBlock Name="secondGameDescription" HorizontalAlignment="Left" Margin="10,229,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="61" Width="772"/>
+        <TextBlock Name="thirdGameDescription" HorizontalAlignment="Left" Margin="10,343,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="61" Width="772"/>
+    </Grid>
+</Window>
